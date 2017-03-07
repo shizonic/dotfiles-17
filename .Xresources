@@ -1,9 +1,8 @@
-#include </home/fuego/.termcolors/snazzy>
-
+#include </home/fuego/.termcolors/kodewolf>
 
 Xft.dpi:                        109
 URxvt*termName:                 xterm-256color
-URxvt*font: xft:Menlo:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12
+URxvt*font:                     xft:Menlo:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12
 URxvt.depth:                    32
 URxvt*lineSpace:                1
 URxvt.letterSpace:              -1
@@ -22,32 +21,32 @@ URxvt.clipboard.autocopy:       true
 !URxvt.shading:                  5
 
 ! Colors
-*background:   bg
-*foreground:   fg
-*cursorColor:  blu
+*background:   black
+*foreground:   white
+*cursorColor:  value
 
-*color0:      blk
-*color8:      bblk
-*color1:      red
-*color9:      red
-*color2:      blu
-*color10:     blu
-*color3:      ylw
-*color11:     ylw
-*color4:      blu
-*color12:     blu
-*color5:      mag
-*color13:     mag
-*color6:      cyn
-*color14:     cyn
-*color7:      wht
-*color15:     wht
+*color0:      black
+*color8:      grey2
+*color1:      statement_accent
+*color9:      statement
+*color2:      identifier_accent
+*color10:     identifier
+*color3:      action_accent
+*color11:     action
+*color4:      value_accent
+*color12:     value
+*color5:      type
+*color13:     type
+*color6:      identifier_accent
+*color14:     identifier
+*color7:      grey1
+*color15:     white
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: blk, blk, #1e2529
-rofi.color-normal: blk, blu, blk, blu, blk
-rofi.color-active: blk, blu, blk, #394249, blu
-rofi.color-urgent: blk, #ff1844, blk, #394249, #ff1844
+rofi.color-window: black, black, trivial_accent
+rofi.color-normal: black, value, black, value, black
+rofi.color-active: black, value, black, grey1, value
+rofi.color-urgent: black, statement, black, grey1, statement

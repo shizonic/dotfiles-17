@@ -1,6 +1,6 @@
 !snazzy
 
-#define bg    [97]#282a36
+#define bg    #282a36
 #define blk   #33303b
 #define fg    #eff0eb
 #define bblk  #4f4b58
