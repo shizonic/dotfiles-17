@@ -1,8 +1,8 @@
-alias go "git checkout"
-alias gs "git status"
-alias gcm "git commit -m "
-alias ga "git add "
-alias gp "git push "
+abbr go="git checkout"
+abbr gs="git status"
+abbr gcm="git commit -m"
+abbr ga="git add"
+abbr gp="git push"
 
 function _git_branch_name
   echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
