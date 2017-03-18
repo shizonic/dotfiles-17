@@ -89,6 +89,8 @@ ws-icon-1 = web;
 ws-icon-2 = code;
 ws-icon-3 = mail;
 ws-icon-4 = music;
+ws-icon-5 = chrome;
+ws-icon-6 = notes;
 ws-icon-default = 
 
 format = <label-state> <label-mode>
@@ -197,23 +199,17 @@ bar-used-empty = ─
 bar-used-empty-font = 6
 bar-used-empty-foreground = #444444
 
-[module/wireless-network]
+[module/network]
 type = internal/network
-interface = wlp58s0 
+interface = enp3s0 
 interval = 3.0
 ping-interval = 10
 
-format-connected = <ramp-signal> <label-connected>
+format-connected = <label-connected>
 format-packetloss = <animation-packetloss> <label-connected>
-label-connected = %essid%  (%downspeed%)
-label-disconnected =    not connected
+label-connected =  %local_ip%  (%downspeed%)
+label-disconnected =  not connected
 label-disconnected-foreground = #778ca1
-
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
 
 animation-packetloss-0 = 
 animation-packetloss-0-foreground = #ffb154

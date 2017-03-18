@@ -26,8 +26,8 @@ ctrl + alt + Escape
 super + Escape
 	pkill -USR1 -x sxhkd
 
-super + u ; {f,e,t,m,s}
-	{firefox,pcmanfm,thunderbird,spotify,subl}
+super + u ; {f,e,t,m,s,c}
+	{firefox,pcmanfm,thunderbird,spotify,subl,code}
 
 super + l
 	dm-tool lock
@@ -81,8 +81,8 @@ super + {_,shift + }z
 	bspc node -f {next,prev}
 
 # focus the next/previous desktop
-super + {Left,Right}
-	bspc desktop -f {prev,next}
+super + {_,shift + }{Left,Right}
+	bspc {desktop -f,node -d} {prev,next}
 
 # focus the last node/desktop
 super + {grave,Tab}
@@ -90,7 +90,7 @@ super + {grave,Tab}
 
 # focus or send to the given desktop
 super + {_,shift + }{d,h,t,n,s}
-	bspc {desktop -f,node -d} '^{1,2,3,4,5}'
+	bspc {desktop -f,node -d} '^{1,2,3,7,8}'
 
 #
 # preselect
