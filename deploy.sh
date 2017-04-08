@@ -41,3 +41,6 @@ ln -s $(pwd)/.gtk-2.0 ~/.gtk-2.0
 
 rm -f ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 ln -s $(pwd)/sublime_text/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+
+rm -f ~/.PyCharm2017.1/config/colors/Material\ Theme\ -\ Kodewolf.icls
+ln -s $(pwd)/pycharm/Material\ Theme\ -\ Kodewolf.icls ~/.PyCharm2017.1/config/colors/Material\ Theme\ -\ Kodewolf.icls
