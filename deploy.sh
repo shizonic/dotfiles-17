@@ -18,8 +18,8 @@ ln -s $(pwd)/fish ~/.config/fish
 rm -rf ~/.config/gtk-3.0
 ln -s $(pwd)/gtk-3.0 ~/.config/gtk-3.0
 
-rm -rf ~/.config/polybar 
-ln -s $(pwd)/polybar/$(hostname) ~/.config/polybar 
+rm -rf ~/.config/polybar
+ln -s $(pwd)/polybar/$(hostname) ~/.config/polybar
 
 rm -f ~/.ssh/config
 ln -s $(pwd)/ssh/config ~/.ssh/config 
@@ -31,10 +31,13 @@ rm -rf ~/.termcolors
 ln -s $(pwd)/termcolors ~/.termcolors
 
 rm -f ~/.Xresources
-ln -s $(pwd)/.Xresources ~/.Xresources
+ln -s $(pwd)/system/.Xresources ~/.Xresources
 
 rm -f ~/.gitconfig
-ln -s $(pwd)/.gitconfig ~/.gitconfig
+ln -s $(pwd)/system/.gitconfig ~/.gitconfig
 
 rm -f ~/.gtk-2.0
 ln -s $(pwd)/.gtk-2.0 ~/.gtk-2.0
+
+rm -f ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+ln -s $(pwd)/sublime_text/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
