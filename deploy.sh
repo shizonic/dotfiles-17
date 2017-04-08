@@ -24,8 +24,8 @@ ln -s $(pwd)/polybar/$(hostname) ~/.config/polybar
 rm -f ~/.ssh/config
 ln -s $(pwd)/ssh/config ~/.ssh/config 
 
-rm -rf ~/.config/sxkhkd
-ln -s $(pwd)/sxkhkd ~/.config/sxkhkd
+rm -rf ~/.config/sxhkd
+ln -s $(pwd)/sxhkd/$(hostname) ~/.config/sxhkd
 
 rm -rf ~/.termcolors
 ln -s $(pwd)/termcolors ~/.termcolors
