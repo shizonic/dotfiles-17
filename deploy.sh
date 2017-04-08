@@ -15,8 +15,11 @@ ln -s $(pwd)/dunst ~/.config/dunst
 rm -rf ~/.config/fish
 ln -s $(pwd)/fish ~/.config/fish
 
-rm -rf ~/.config/gtk-3.0
-ln -s $(pwd)/gtk-3.0 ~/.config/gtk-3.0
+rm -rf ~/.config/gtk/settings.ini
+ln -s $(pwd)/gtk/settings.ini ~/.config/gtk-3.0/settings.ini
+
+rm -rf ~/.gtkrc-2.0
+ln -s $(pwd)/gtk/.gtkrc-2.0 ~/.gtkrc-2.0
 
 rm -rf ~/.config/polybar
 ln -s $(pwd)/polybar/$(hostname) ~/.config/polybar
