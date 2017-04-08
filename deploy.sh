@@ -36,9 +36,6 @@ ln -s $(pwd)/system/.Xresources ~/.Xresources
 rm -f ~/.gitconfig
 ln -s $(pwd)/system/.gitconfig ~/.gitconfig
 
-rm -f ~/.gtk-2.0
-ln -s $(pwd)/.gtk-2.0 ~/.gtk-2.0
-
 rm -f ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 ln -s $(pwd)/sublime_text/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 
