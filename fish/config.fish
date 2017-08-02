@@ -1,8 +1,21 @@
+alias toucan "cd Projects/Main/CybelAngel/toucan-project/toucan/"
+
 abbr go="git checkout"
 abbr gs="git status"
 abbr gcm="git commit -m"
 abbr ga="git add"
 abbr gp="git push"
+abbr gm="git merge"
+
+abbr dk="docker"
+abbr dco="docker-compose"
+
+function spork
+   knife spork bump $argv[1] $argv[3]
+   knife spork upload $argv[1]
+   knife spork promote $argv[2] $argv[1]
+   knife environment from file $argv[2].json
+end
 
 function _git_branch_name
   echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
@@ -47,9 +60,10 @@ function fish_prompt
     end
   end
 
-  # Notify if a command took more than 5 minutes
-  if [ "$CMD_DURATION" -gt 300000 ]
-    echo The last command took (math "$CMD_DURATION/1000") seconds.
+  # Notify if a command took more than 10 sec
+  if [ "$CMD_DURATION" -gt 10000 ]
+  	echo -ne "\a"
+	echo The last command took (math "$CMD_DURATION/1000") seconds.
   end
 
   echo -n -s $status_indicator $cwd $git_info $normal ' '

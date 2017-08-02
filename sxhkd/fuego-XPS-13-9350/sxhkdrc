@@ -11,6 +11,9 @@ XF86MonBrightnessDown
 XF86Audio{Raise,Lower}Volume
     amixer sset Master {1+,1-} unmute
 
+XF86Audio{Play,Stop,Next,Prev}
+    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.{PlayPause,Stop,Next,Previous}
+
 # terminal emulator
 super + Return
 	urxvt
@@ -26,8 +29,8 @@ ctrl + alt + Escape
 super + Escape
 	pkill -USR1 -x sxhkd
 
-super + u ; {f,e,t,m,s,c}
-	{firefox,pcmanfm,thunderbird,spotify,subl,code}
+super + u ; {f,e,t,m,s}
+	{firefox,pcmanfm,thunderbird,spotify,subl}
 
 super + l
 	dm-tool lock

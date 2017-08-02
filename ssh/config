@@ -4,3 +4,6 @@ Host *
 
 Host atlas
   User osmc
+
+Host * 
+  User ancybel

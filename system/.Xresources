@@ -12,10 +12,9 @@ URxvt*geometry:                 65x17
 URxvt.scrollBar:                false
 URxvt*loginShell:               true
 URxvt.internalBorder:           35
-URxvt.perl-ext-common:          default,clipboard
-URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
-URxvt.keysym.Shift-Control-V:   perl:clipboard:paste
 URxvt.clipboard.autocopy:       true
+URxvt.urgentOnBell: 		true
+URxvt.visualBell: 		true
 
 !URxvt.transparent:              true
 !URxvt.shading:                  5
